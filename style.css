@@ -215,24 +215,30 @@ input[type=checkbox] + label:before {
     border: 0px solid #ddd;
     display: inline-block;
     vertical-align: middle;
-    width: 10px;
+    width: 20px;
     height: 10px;
     padding: 2px;
     margin-right: 10px;
+    cursor: default;
+    
 }
 
 input[type=checkbox]:checked + label:before {
     content: "";
     display: inline-block;
-    width: 10px;
-    height: 3px;
+    width: 30px;
+    height: 25px;
     border: solid green;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    border-radius: 0;
-    margin: 0 15px 5px 5px;
+    border-radius: 3px;
+    margin: -8px 20px 5px 0px;
+    cursor: default;
+    
+    
+    
 }
 
 
