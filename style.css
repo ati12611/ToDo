@@ -1,13 +1,13 @@
 body {
     background-image: url(jpg/background.png);
- 
+
 }
 
 .container {
-    max-width: 69, 27083333333333%;
+    max-width: 69,27083333333333%;
     margin: 0 auto;
 
-    padding: 0px 15px;
+    padding: 0px;
 
 }
 
@@ -22,15 +22,23 @@ body {
 @media (max-width: 992px) {
     .container {
         max-width: 750px;
+        margin-right: 10px;
 
     }
 }
 
 @media (max-width: 767px) {
+    h1 {
+        display: none;
+    }
+
     .container {
         max-width: none;
+        margin-right: 10px;
+
 
     }
+
 }
 
 
@@ -48,7 +56,6 @@ h1 {
 
 
 }
-
 
 
 h2 {
@@ -171,6 +178,7 @@ input[type=text] {
 
 
 .todo {
+    width: 200px;
     margin-top: 20px;
     padding-left: 0;
 
@@ -179,6 +187,7 @@ input[type=text] {
 .todo li {
     padding: 1em;
     list-style-type: none;
+    width: 200px;
 }
 
 .todo li:not(:last-child) {
@@ -196,6 +205,7 @@ label {
     vertical-align: middle;
     margin: 5px;
     cursor: pointer;
+    
 }
 
 input[type=checkbox] + label:before {
@@ -223,4 +233,56 @@ input[type=checkbox]:checked + label:before {
     -ms-transform: rotate(45deg);
     border-radius: 0;
     margin: 0 15px 5px 5px;
+}
+
+
+
+@media(max-width:750px) {
+    .todo_list {
+        max-width: 160px;
+        margin-right: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .create_new_todo {
+        height: 10px;
+        width: 200px;
+       margin-left: -10px;
+        padding-bottom: -50px;
+    }
+
+    input[type=text] {
+        margin: 20px -30px;
+        margin-right: 220px;
+        width: 110%;
+    }
+    button {
+        left: -40px;
+        margin-bottom:30px;
+        
+    }
+    .bot1 {
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: -100px;
+        position: relative;
+        
+    }
+
+    .bot2 {
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+         margin-top: 30px;
+        margin-left: 100px;
+    }
+    .todo {
+	margin-left: -50px;
+}
 }
